@@ -7,61 +7,32 @@
     <meta content="Jeremías Tomllenovich" name="author">
     <meta content="html, cabeceras, etiquetas" name="keywords">
     <meta content=" Juego, Habilidad, Diversión, Destreza" >
+    <link rel="stylesheet" href="tomllenovich-romerom.css" type="text/css">
 
-    <style>
-        #titulo1{
-            color: #dc35fe;
-            font-family: "Bradley Hand ITC";
-            text-align: center;
-            font-size:  60px;
-            font-weight: bold;
-        }
-        #titulo2{
-            text-align: center;
-            font-family: "Bradley Hand ITC";
-            font-size: 40px;
-            color: aqua;
-            font-weight: bold;
-        }
-        #nom{
-            text-align: left;
-            font-family: Tahoma;
-            font-size: 20px;
-            color: #24fe17;
-        }
-        #descrip{
-            text-align: center;
-            font-family: "Bodoni MT";
-            font-size: 30px;
-            color: deeppink;
-        }
-        #rank{
-            text-align: right;
-            font-family: Gadugi;
-            font-size: 15px;
-            color: aquamarine;
-        }
-        body{
-            background-image: url("fotosproyecto/retrowave-lineas-montanas_3840x2160_xtrafondos.com.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-
-        }
-    </style>
 
 </head>
 
 <body>
-
-    <p> <header> <h1  id="titulo1"> Zunga Bouncing </h1> </p>
-<p> <h2 id="descrip">Muevete, no vayas a caer en la lava o sucumbiras</h2> </p>
+<header>
+<div class="todo" id="div1">
+    <h1>Zunga Bouncing</h1>
+    <p>Muevete, no vayas a caer en la lava o sucumbiras</p>
+</div>
 </header>
-    <p id="rank"> Tabla de clasificaciones: <button> Ranking </button> </p>
+<div id="div2">
+    <p id="rank"> Tabla de clasificaciones:</p>
+    <p id="rank2"><button> Ranking </button> </p>
+</div>
+
+<div class="todo" id="div3">
     <p> <label id="nom" for="nombre"> Ingrese su nombre aquí: </label></p> <p> <input type="text" name="nombre" placeholder="nombre" id="nombre"> </p>
-    <p> <button> ¡Jugar ahora! </button></p>
-    <p>Elija su pelota:</p> <p><input type="checkbox" name="Elija su pelota: " value="red" id="red"> <label for="red"><img src="fotosproyecto/pelota%20roja.jpeg" alt="pelota roja"></label> </p>
-    <p><input type="checkbox" name="Elija su pelota: " value="green" id="green"> <label for="green"><img src="fotosproyecto/pelota%20verde.jpeg" alt="pelota verde"></label></p>
-    <p><input type="checkbox" name="Elija su pelota: " value="blue" id="blue"> <label for="blue"><img src="fotosproyecto/pelota%20azul.jpeg" alt="pelota azul"></label></p>
-    <p><h3 id="titulo2"><b>Jeremías Tomllenovich y Manuel Romero Medina</b></h3></p>
+          <p id="pelota">Elija su pelota:</p> <div id="negro">  <input type="radio" name="Elija su pelota: " value="red" id="red"> <label for="red"><img src="fotosproyecto/pelota_roja-removebg-preview.png" width="50" height="50" alt="pelota roja"></label>
+        <input type="radio" name="Elija su pelota: " value="green" id="green"> <label for="green"><img src="fotosproyecto/pelota_verde-removebg-preview.png" width="50" height="50" alt="pelota verde" ></label>
+            <input type="radio" name="Elija su pelota: " value="blue" id="blue"> <label for="blue"><img src="fotosproyecto/pelota_azul-removebg-preview.png" width="50" height="50" alt="pelota azul"></label></div>
+        <p> <button> ¡Jugar ahora! </button></p>
+</div>
+    <div class="todo" id="div4">
+          <p><h3 id="titulo2"><b>Jeremías Tomllenovich y Manuel Romero Medina</b></h3></p>
+    </div>
 </body>
 </html>
