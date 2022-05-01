@@ -1,4 +1,4 @@
-# Zunga Bouncing
+_# Zunga Bouncing
 
 - [ ] Jeremías Tomllenovich
 - [ ] Manuel Romero Medina
@@ -116,4 +116,4 @@ Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada
 - [ ] Debe cumplir con TODOS los requisitos del 1er y 2do Parcial (si se agrego código nuevo en Js, se debe documentar,
   si hay nuevos inputs de html deben contener su label, etc)
 - [ ] El Canvas debe poseer animación con setInterval() o requestAnimationFrame()
-- [ ] El cálculo del ejercicio de física/etc debe ser el correcto, independientemente de los valores ingresados.
+- [ ] El cálculo del ejercicio de física/etc debe ser el correcto, independientemente de los valores ingresados._
