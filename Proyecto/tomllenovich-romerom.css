@@ -1,0 +1,60 @@
+div.todo {
+    border: 4px solid black;
+    text-align: center;
+}
+
+#div1{
+    margin: 10px 30%;
+    color: #ff6ded;
+    font-family: "Blackadder ITC";
+    font-size: 40px;
+}
+#div2{
+
+    border: 4px solid white;
+    margin: 10px 40%;
+    padding: 5px 5px;
+    position: relative;
+    left: 40%;
+}
+#div3{
+    border: 4px solid black;
+    margin: 10px 40%;
+    padding: 10px 15px;
+   }
+#div4{
+    color: aliceblue;
+    margin: 10px 40%;
+    padding: 10px 15px;
+}
+#negro{
+    background: black;
+    border-radius: 10px;
+}
+#nom{
+    text-align: left;
+    font-family: Tahoma;
+    font-size: 20px;
+    color: #24fe17;
+}
+button {
+    border: 2px solid white;
+    margin: 10px;
+    border-radius: 15px;
+    text-align: center;
+    background-size: 100px;
+    background-repeat: no-repeat;
+}
+button:hover {
+    font-size: 100%;
+}
+button:active {
+    font-weight: bold;
+}
+
+body{
+    background-image: url("fotosproyecto/retrowave-lineas-montanas_3840x2160_xtrafondos.com.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
