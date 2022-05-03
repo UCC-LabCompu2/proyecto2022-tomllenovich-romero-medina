@@ -65,7 +65,6 @@ color: rosybrown;
 #botonatras{
     position:absolute;
     bottom:85%;
-    background: black;
 }
 #columna{
     top: 15%;
@@ -98,7 +97,7 @@ button:hover {
     background-repeat: no-repeat;
     background-size: cover;
 }
-body{
+#body{
     background-image: url("fotosproyecto/retrowave-lineas-montanas_3840x2160_xtrafondos.com.jpg");
     background-repeat: no-repeat;
     background-size: cover;
