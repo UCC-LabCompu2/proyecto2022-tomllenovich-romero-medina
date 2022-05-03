@@ -64,9 +64,9 @@ color: rosybrown;
 }
 #nom{
     text-align: left;
-    font-family: Tahoma;
+    font-family: Algerian;
     font-size: 15px;
-    color: #24fe17;
+    color: #27fee5;
 }
 
 button {
@@ -83,6 +83,11 @@ button:hover {
     box-shadow: 0 10px 20px #000;
     background-color: #D0D3D4;
     cursor: pointer;
+}
+#backjug{
+    background-image: url("fotosproyecto/como jugar pantalla.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 body{
     background-image: url("fotosproyecto/retrowave-lineas-montanas_3840x2160_xtrafondos.com.jpg");
