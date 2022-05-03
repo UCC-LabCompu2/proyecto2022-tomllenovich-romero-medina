@@ -1,4 +1,4 @@
-_# Zunga Bouncing
+# Zunga Bouncing
 
 - [ ] Jeremías Tomllenovich
 - [ ] Manuel Romero Medina
