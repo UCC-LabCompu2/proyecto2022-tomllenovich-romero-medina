@@ -104,3 +104,14 @@ button:hover {
     background-repeat: no-repeat;
     background-size: cover;
 }
+div#canvas {
+    margin-top: 0%;
+    margin-left: 33.8%;
+}
+
+#lineacanvas{
+    width: 100%;
+    height: 3px;
+    background: #27fee5 ;
+    text-align: center;
+}
