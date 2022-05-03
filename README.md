@@ -1,15 +1,15 @@
 # Zunga Bouncing
 https://ucc-labcompu2.github.io/proyecto2022-tomllenovich-romero-medina/
 
-- [ ] Jeremías Tomllenovich
-- [ ] Manuel Romero Medina
+- [ ] Jeremías Tomllenovich.
+- [ ] Manuel Romero Medina.
 
-### Tecnologías Usadas
-- [ ] Github
-- [ ] Webstorm
-- [ ] HTML
-- [ ] CSS
-- [ ] Photoshop
+### Tecnologías Usadas:
+- [ ] Github.
+- [ ] Webstorm.
+- [ ] HTML.
+- [ ] CSS.
+- [ ] Photoshop.
 
 ## Requisitos del Primer Parcial
 
