@@ -11,9 +11,9 @@ GitHub: https://github.com/UCC-LabCompu2/proyecto2022-tomllenovich-romero-medina
 ### Autores: 
 
 
-| **Jeremías Tomllenovich**  (2107117@ucc.edu.ar) |
+| **Jeremías Tomllenovich  (2107117@ucc.edu.ar)** |
 |-------------------------------------------------|
-| **Manuel Romero Medina**  (2105277@ucc.edu.ar)  | 
+| **Manuel Romero Medina  (2105277@ucc.edu.ar)**  | 
 | Ingeniería Sistema UCC                          |   
 
 
