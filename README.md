@@ -1,5 +1,5 @@
 # Zunga Bouncing
-http://localhost:63342/proyecto2022-tomllenovich-romero-medina/Proyecto/INDEX_Tomllenovich_RomeroM.html?_ijt=9ov17hm1tjrig3vkglanms8b2f&_ij_reload=RELOAD_ON_SAVE
+
 
 - [ ] Jeremías Tomllenovich
 - [ ] Manuel Romero Medina
