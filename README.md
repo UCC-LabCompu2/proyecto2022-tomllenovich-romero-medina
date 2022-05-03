@@ -4,7 +4,7 @@
 
 # Zunga Bouncing  :shorts: :red_circle:
 
-- GH pages: https://ucc-labcompu2.github.io/proyecto2022-tomllenovich-romero-medina/
+- GH pages: https://ucc-labcompu2.github.io/proyecto2022-tomllenovich-romero-medina/INDEX_Tomllenovich_RomeroM.html
 
 - GitHub: https://github.com/UCC-LabCompu2/proyecto2022-tomllenovich-romero-medina
 
