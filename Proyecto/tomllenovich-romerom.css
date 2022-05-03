@@ -102,4 +102,8 @@ button:hover {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+#backplay{
+    background-image: url("fotosproyecto/retro mountain palms.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
