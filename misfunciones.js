@@ -22,9 +22,8 @@ function iniciojuego(){
         }
     }
 /**
- * Verifica que el nombre no sea ni espacios vacios,ni contenga numeros,y que hayan ingresado algo
- * tambien verifica que se haya seleccionado una pelota y si esto es correcto nos lleva al juego
- * @method iniciojuego()
+ * ejecuta la funcion dibujar y dibujarpis.
+ * @method animar()
  */
 function animar(){
     setInterval("dibujar()",20);
@@ -32,9 +31,8 @@ function animar(){
 }
 var posx=30;
 /**
- * Verifica que el nombre no sea ni espacios vacios,ni contenga numeros,y que hayan ingresado algo
- * tambien verifica que se haya seleccionado una pelota y si esto es correcto nos lleva al juego
- * @method iniciojuego()
+ * dibuja un circulo y lo hace desplazarse hasta la derecha  cuando llega al tope vuelve al inicio
+ * @method dibujar()
  */
 function dibujar(){
     let contexto = document.getElementById("canvajuego").getContext("2d");
@@ -52,9 +50,8 @@ function dibujar(){
 }
 var posy=430;
 /**
- * Verifica que el nombre no sea ni espacios vacios,ni contenga numeros,y que hayan ingresado algo
- * tambien verifica que se haya seleccionado una pelota y si esto es correcto nos lleva al juego
- * @method iniciojuego()
+ * dibuja el piso de nuestra pelota y lo hace elevar hasta el tope de la pantalla, llegado a este vuelve abajo.
+ * @method dibupis()
  */
     function dibupis(){
         var canvas=document.getElementById("canvajuego").getContext("2d");
@@ -65,7 +62,6 @@ var posy=430;
         img.src="fotosproyecto/pisof.png";
         img.onload = function (){
             canvas.drawImage(img,0,posy,1200,40);
-
         }
         if(posy<0){
             posy=300;
