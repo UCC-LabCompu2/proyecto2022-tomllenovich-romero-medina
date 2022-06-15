@@ -12,7 +12,7 @@ function iniciojuego(){
         else{
             for (var i=0;i<document.form1.pelota.length;i++){
                 if(document.querySelector('input[name="pelota"]:checked')){
-                    window.open("index%20juego.html");
+                    window.open("index_juego.html");
                     s="si"
                 }else{if(s==="no")
                     alert("elija una pelota")
@@ -21,16 +21,21 @@ function iniciojuego(){
             }
         }
     }
-function animapista(){
-
-
-}
+/**
+ * Verifica que el nombre no sea ni espacios vacios,ni contenga numeros,y que hayan ingresado algo
+ * tambien verifica que se haya seleccionado una pelota y si esto es correcto nos lleva al juego
+ * @method iniciojuego()
+ */
 function animar(){
     setInterval("dibujar()",20);
     setInterval("dibupis()",100);
 }
 var posx=30;
-
+/**
+ * Verifica que el nombre no sea ni espacios vacios,ni contenga numeros,y que hayan ingresado algo
+ * tambien verifica que se haya seleccionado una pelota y si esto es correcto nos lleva al juego
+ * @method iniciojuego()
+ */
 function dibujar(){
     let contexto = document.getElementById("canvajuego").getContext("2d");
     contexto.clearRect(0,0,1250,1500);
@@ -46,7 +51,11 @@ function dibujar(){
     }
 }
 var posy=430;
-
+/**
+ * Verifica que el nombre no sea ni espacios vacios,ni contenga numeros,y que hayan ingresado algo
+ * tambien verifica que se haya seleccionado una pelota y si esto es correcto nos lleva al juego
+ * @method iniciojuego()
+ */
     function dibupis(){
         var canvas=document.getElementById("canvajuego").getContext("2d");
         var img = new Image();
