@@ -6,16 +6,16 @@ var y = canva.height - 30;
 var dx = 2;
 var DY = -2;
 var puntuacion=0;
-var filas = 3;
-var columnas = 13;
+var filas = 1;
+var columnas = 10;
 var espacio = 10;
 var espacioarriba= 30;
 var ESPACIOIZQ = 10;
 var flechaderecha = false;
 var flechaizq = false;
 var bloque = {
-    height: 15,
-    width: 80,
+    height: 30,
+    width: 100,
 };
 var col=cargarlocal();
 
@@ -30,11 +30,11 @@ var bola = {
         contx.arc(x, y, this.radio, 0, 2 * Math.PI);
         if (col == 0)
         {
-            contx.fillStyle="red";
+            contx.fillStyle="orangered";
         }
         if (col == 1)
         {
-            contx.fillStyle="green";
+            contx.fillStyle="lawngreen";
         }
         if (col==2)
         {
@@ -44,15 +44,14 @@ var bola = {
         contx.fill();
         contx.closePath();
     }
-
 };
 /**
  * Dibuja la barra (ponemos color y tamaño)
  * @method dibujar
  */
 var barra = {
-    width: 90,
-    height: 8,
+    width: 110,
+    height: 20,
     pX: (canva.width - 90) / 2,
     dibujar: function () {
         contx.beginPath();
