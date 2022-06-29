@@ -6,21 +6,21 @@
 function iniciojuego(){
     var s="no";
     let text = document.getElementById("Nombre").value;
-        if(/\d/.test(text) ||text===null || text==="" ){
+    if(/\d/.test(text) ||text===null || text==="" ){
         alert('el nombre que ingreso es invalido solo debe contener letras.')
-        }
-        else{
-            for (var i=0;i<document.form1.pelota.length;i++){
-                if(document.querySelector('input[name="pelota"]:checked')){
-                    window.open("index_juego.html");
-                    s="si"
-                }else{if(s==="no")
-                    alert("elija una pelota")
-                    s=mu;
-                }
+    }
+    else{
+        for (var i=0;i<document.form1.pelota.length;i++){
+            if(document.querySelector('input[name="pelota"]:checked')){
+                window.open("index_juego.html");
+                s="si"
+            }else{if(s==="no")
+                alert("elija una pelota")
+                s=mu;
             }
         }
     }
+}
 
 function fun(){
     var colorp;
@@ -32,14 +32,13 @@ function fun(){
     }else if(type[2].checked){
         colorp=2;
     }
-    localStorage.setItem("color",colorp);
-}
-function cargarlocal(){
-let colorp;
-colorp=localStorage.getItem("color");
-
+    localStorage.setItem("color", colorp);
 }
 
+function cargarlocal() {
+    let colorp;
+    colorp = localStorage.getItem("color");
+}
 
 
 

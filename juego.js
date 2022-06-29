@@ -136,6 +136,7 @@ function romper()
         }
     }
 }
+
 /**
  * Se encarga de llamar a las demas funciones (para dibujar bola, barra, cuadro de bloques)
  * @method dibujar

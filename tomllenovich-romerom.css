@@ -36,13 +36,13 @@ div.todo {
     margin: 5px 35%;
     padding: 10px 15px;
 
-   }
+}
 
 #div4{
     color: #27fee5;
     margin: 10px 40%;
     padding: 10px 15px;
- position: static;
+    position: static;
     bottom: 1%;
 }
 
@@ -60,7 +60,7 @@ div.todo {
     color:  white;
 }
 #comoj{
-color: #000000;
+    color: #000000;
 }
 #botonatras{
     position:static;
@@ -139,4 +139,3 @@ div#canvas {
     text-align: center;
 }
 canvas{ margin: 80px 0 10px 0; display: flex}
-
