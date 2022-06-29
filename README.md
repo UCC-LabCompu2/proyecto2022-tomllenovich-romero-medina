@@ -24,7 +24,7 @@
 - [ ] Webstorm.
 - [ ] HTML.
 - [ ] CSS.
-- [ ] JavaScript (en un futuro).
+- [ ] JavaScript.
 - [ ] Photoshop. 
 
 ### Descripción
