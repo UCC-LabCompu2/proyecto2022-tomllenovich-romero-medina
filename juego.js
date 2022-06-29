@@ -1,3 +1,4 @@
+
 var canva = document.getElementById("canvajuego");
 var contx = canva.getContext("2d");
 var x = canva.width / 2;
@@ -16,6 +17,8 @@ var bloque = {
     height: 15,
     width: 80,
 };
+var col=cargarlocal();
+
 /**
  * Dibuja la bola (ponemos color y tamaño)
  * @method dibujar
@@ -25,10 +28,23 @@ var bola = {
     dibujar: function () {
         contx.beginPath();
         contx.arc(x, y, this.radio, 0, 2 * Math.PI);
-        contx.fillStyle="red";
+        if (col == 0)
+        {
+            contx.fillStyle="red";
+        }
+        if (col == 1)
+        {
+            contx.fillStyle="green";
+        }
+        if (col==2)
+        {
+            contx.fillStyle="blue";
+        }
+
         contx.fill();
         contx.closePath();
     }
+
 };
 /**
  * Dibuja la barra (ponemos color y tamaño)
@@ -74,10 +90,10 @@ function keyDownHandler(event)
     {
         flechaderecha = true;
     } else
-        if (event.keyCode === 37 || event.keyCode === 65)
-            {
-                flechaizq = true;
-            }
+    if (event.keyCode === 37 || event.keyCode === 65)
+    {
+        flechaizq = true;
+    }
 }
 /**
  * Indica la tecla ya no esta pulsada
@@ -106,7 +122,6 @@ function dibujarobj() {
                 objetivos[i][j].y = bloqueY;
                 contx.beginPath();
                 contx.fillRect(bloqueX, bloqueY, bloque.width, bloque.height);
-
                 contx.fill();
                 contx.closePath();
             }
@@ -143,11 +158,10 @@ function romper()
  */
 function dibujar() {
     contx.clearRect( 0,0,1200,500);
-    barra.dibujar();
     bola.dibujar();
+    barra.dibujar();
     dibujarobj();
     romper();
-    var a=1;
     if (x + dx < bola.radio || x + dx > canva.width - bola.radio) {
         dx = -dx;
     }
@@ -156,10 +170,9 @@ function dibujar() {
     }else    if (y + DY > canva.height - bola.radio) {
         if (x > barra.pX && x < barra.width + barra.pX) {
             DY = -DY;
-        } else if(a===1){
+        }else {
             alert("fracasaste jajajaja");
             document.location.reload();
-            a++;
         }
     }
     if (flechaderecha && barra.pX < canva.width - barra.width) {

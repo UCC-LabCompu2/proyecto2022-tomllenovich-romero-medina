@@ -113,7 +113,7 @@ button:hover {
     cursor: pointer;
 }
 #backjug{
-    background-image: url("fotosproyecto");
+    background-image: url("fotosproyecto/comojugar.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }

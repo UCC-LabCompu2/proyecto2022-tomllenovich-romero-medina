@@ -26,18 +26,17 @@ function fun(){
     var colorp;
     var type=document.getElementsByName("pelota");
     if (type[0].checked){
-        colorp=0;
+        colorp='0';
     }else if(type[1].checked){
-        colorp=1;
+        colorp='1';
     }else if(type[2].checked){
-        colorp=2;
+        colorp='2';
     }
     localStorage.setItem("color", colorp);
 }
 
 function cargarlocal() {
-    let colorp;
-    colorp = localStorage.getItem("color");
+    return localStorage.getItem("color");
 }
 
 

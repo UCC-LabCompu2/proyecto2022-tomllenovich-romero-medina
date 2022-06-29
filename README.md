@@ -15,7 +15,7 @@
 
 | **Jeremías Tomllenovich  (2107117@ucc.edu.ar)**    |
 |----------------------------------------------------|
-| **rocio vulcano  (2107174@ucc.edu.ar)**                  |
+| **Rocío Vulcano          (2107174@ucc.edu.ar)**    |
 | -------------------------------------------------- |
 | **Manuel Romero Medina  (2105277@ucc.edu.ar)**     | 
 | Ingeniería Sistema UCC                             |   
@@ -31,8 +31,8 @@
 - [ ] Photoshop. 
 
 ### Descripción
-* Muevete, no vayas a caer en la lava o sucumbiras.
-* Juego de habilidad y destreza en el cual el objetivo del juego es "ayudar" a la pelota seguir en el camino sin morir y obtener una distancia, y primordialmente, divertirse.
+* Muevete, y destruye los ladrillos.
+* Juego de habilidad y destreza en el cual el objetivo del juego destruir los ladrillos.
 
 * Nuestro proyecto, Zunga Bouncing, está ambientada en lo retro/80´s, con fondos y estilos de la época. En la página principal, cuenta
 con un mini menú en donde el usuario (jugador) puede ingresar su nombre o apodo y eligir que avatar quiere usar para poder jugar.
