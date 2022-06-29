@@ -3,7 +3,7 @@ var canva = document.getElementById("canvajuego");
 var contx = canva.getContext("2d");
 var x = canva.width / 2;
 var y = canva.height - 30;
-var dx = 2;
+var dx = 1;
 var DY = -2;
 var puntuacion=0;
 var filas = 1;
@@ -143,7 +143,7 @@ function romper()
                 b.status =0;
                 puntuacion++;
                 if (puntuacion == filas*columnas){
-                    alert("ganaste pa muy bien sos genio mal.")
+                    alert("Ganaste pa, muy bien sos genio mal!!!")
                     document.location.reload()
                 }
             }
@@ -170,7 +170,7 @@ function dibujar() {
         if (x > barra.pX && x < barra.width + barra.pX) {
             DY = -DY;
         }else {
-            alert("fracasaste jajajaja");
+            alert("Fracasaste JAJAJAJAJAJAJ");
             document.location.reload();
         }
     }

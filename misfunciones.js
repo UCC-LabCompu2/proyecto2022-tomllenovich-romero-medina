@@ -7,7 +7,7 @@ function iniciojuego(){
     var s="no";
     let text = document.getElementById("Nombre").value;
     if(/\d/.test(text) ||text===null || text==="" ){
-        alert('el nombre que ingreso es invalido solo debe contener letras.')
+        alert('El nombre que ingreso es invalido solo debe contener letras.')
     }
     else{
         for (var i=0;i<document.form1.pelota.length;i++){
@@ -15,7 +15,7 @@ function iniciojuego(){
                 window.open("index_juego.html");
                 s="si"
             }else{if(s==="no")
-                alert("elija una pelota")
+                alert("Elija una pelota")
                 s=mu;
             }
         }
