@@ -138,5 +138,5 @@ div#canvas {
     background: #27fee5 ;
     text-align: center;
 }
-canvas{background: darkgrey; margin: 80px 0px 10px 0px ; display: block}
+canvas{background: darkgrey; margin: 80px 0px 10px 0px ; display: flex}
 

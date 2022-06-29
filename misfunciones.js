@@ -21,55 +21,32 @@ function iniciojuego(){
             }
         }
     }
-/**
- * ejecuta la funcion dibujar y dibujarpis.
- * @method animar()
- */
-function animar(){
-    setInterval("dibujar()",20);
-    setInterval("dibupis()",100);
-}
-var posx=30;
-/**
- * dibuja un circulo y lo hace desplazarse hasta la derecha  cuando llega al tope vuelve al inicio
- * @method dibujar()
- */
-function dibujar(){
-    let contexto = document.getElementById("canvajuego").getContext("2d");
-    contexto.clearRect(0,0,1250,1500);
-    contexto.beginPath();
-    contexto.fillStyle="red";
-    contexto.arc(posx,100,30,0,2*Math.PI)
-    contexto.fill();
-    contexto.closePath();
-    if(posx+30<1250){
-        posx=posx+10;
-    }else{
-        posx=0;
+
+function fun(){
+    var colorp;
+    var type=document.getElementsByName("pelota");
+    if (type[0].checked){
+        colorp=0;
+    }else if(type[1].checked){
+        colorp=1;
+    }else if(type[2].checked){
+        colorp=2;
     }
+
+    localStorage.setItem("color",colorp);
 }
-var posy=430;
-/**
- * dibuja el piso de nuestra pelota y lo hace elevar hasta el tope de la pantalla, llegado a este vuelve abajo.
- * @method dibupis()
- */
-    function dibupis(){
-        var canvas=document.getElementById("canvajuego").getContext("2d");
-        var img = new Image();
+function cargarlocal(){
+let colorp;
+colorp=localStorage.getItem("color");
 
-        canvas.clearRect(0,0,1250,1500);
+}
 
-        img.src="fotosproyecto/pisof.png";
-        img.onload = function (){
-            canvas.drawImage(img,0,posy,1200,40);
-        }
-        if(posy<0){
-            posy=300;
-        }else{
-            posy-=10;
-        }
 
-    }
+
+
+
+
+
 
 
 

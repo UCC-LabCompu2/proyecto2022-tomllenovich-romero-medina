@@ -11,8 +11,8 @@
     <link rel="shortcut icon" href="fotosproyecto/joystick.png">
     <script type="text/javascript" src="misfunciones.js"></script>
 </head>
-<body id="backplay" onload="animar(),dibupis()">
-<header>
+<body id="backplay" >
+<header onload="pasarFormulario()">
     <div id="PUNTU">
         <h1>
             <u>PUNTUACION:</u>
@@ -26,10 +26,13 @@
         </a>
     </button>
 </nav>
+<main>
+        <canvas id="canvajuego" width="1200px" height="400" onload="cargarlocal()">
+            Su navegador no soporta el canvas
+        </canvas>
+</main>
 
-<canvas id="canvajuego" width="1250px" height="410px">
-
-</canvas>
+<script src="juego.js"></script>
 
 </body>
 </html>
