@@ -32,7 +32,6 @@ function fun(){
     }else if(type[2].checked){
         colorp=2;
     }
-
     localStorage.setItem("color",colorp);
 }
 function cargarlocal(){

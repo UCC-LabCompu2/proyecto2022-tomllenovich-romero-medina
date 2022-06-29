@@ -41,39 +41,7 @@ var barra = {
         contx.closePath();
     }
 };
-/**
- * Se encarga de llamar a las demas funciones (para dibujar bola, barra, cuadro de bloques)
- * @method dibujar
- */
-function dibujar() {
-    contx.clearRect( 0,0,1200,500);
-    if (x + dx < bola.radio || x + dx > canva.width - bola.radio) {
-        dx = -dx;
-    }
-    if (y + DY < bola.radio) {
-        DY = -DY;
-    }
-    if (y + DY > canva.height - bola.radio) {
-        if (x > barra.pX && x < barra.width + barra.pX) {
-            DY = -DY;
-        } else {
-            alert("fracasaste jajajaja");
-        }
-    }
-    if (flechaderecha && barra.pX < canva.width - barra.width) {
-        barra.pX += 3;
-    } else if (flechaizq && barra.pX > 0) {
-        barra.pX -= 3;
-    }
-    bola.dibujar();
-    barra.dibujar();
-    romper();
-    dibujarobj();
-    x = x + dx;
-    y = y + DY;
 
-}
-setInterval(dibujar, 7);
 /**
  * Movemos la barra
  *document.addEvenListener - pulsado de teclas
@@ -129,9 +97,9 @@ var ESPACIOIZQ = 10;
  * @method dibujarobj
  */
 var objetivos = [];
-for (i = 0; i < columnas; i++) {
+for (var i = 0; i < columnas; i++) {
     objetivos[i] = [];
-    for (j = 0; j < filas; j++) {
+    for (var j = 0; j < filas; j++) {
         objetivos[i][j] = {x: 0, y: 0, status:1};
     }
 }
@@ -139,10 +107,10 @@ function dibujarobj() {
     for (i = 0; i < columnas; i++) {
         for (j = 0; j < filas; j++) {
             if (objetivos[i][j].status === 1){
-                objetivos[i][j].x = 0;
-                objetivos[i][j].y = 0;
                 var bloqueX = (i * (bloque.width + espacio)) + ESPACIOIZQ;
                 var bloqueY = (j * (bloque.height + espacio)) + espacioarriba;
+                objetivos[i][j].x = bloqueX;
+                objetivos[i][j].y = bloqueY;
                 contx.beginPath();
                 contx.fillRect(bloqueX, bloqueY, bloque.width, bloque.height);
                 contx.fillStyle="black";
@@ -159,10 +127,10 @@ function dibujarobj() {
  */
 function romper()
 {
-    for (i = 0; i < columnas; i++) {
-        for (j = 0; j < filas; j++) {
+    for (var i = 0; i < columnas; i++) {
+        for (var j = 0; j < filas; j++) {
             var b = objetivos[i][j];
-            if (x>b.x && x<b.x+bloque.width && y>b.y && y<b.y+bloque.height){
+            if (x>b.x && x< b.x+bloque.width && y>b.y && y<b.y+bloque.height){
                 DY=-DY;
                 b.status =0;
             }
@@ -173,3 +141,37 @@ function romper()
 
 
 
+/**
+ * Se encarga de llamar a las demas funciones (para dibujar bola, barra, cuadro de bloques)
+ * @method dibujar
+ */
+function dibujar() {
+    contx.clearRect( 0,0,1200,500);
+    dibujarobj();
+    barra.dibujar();
+    bola.dibujar();
+    romper();
+    var a=1;
+    if (x + dx < bola.radio || x + dx > canva.width - bola.radio) {
+        dx = -dx;
+    }
+    if (y + DY < bola.radio) {
+        DY = -DY;
+    }else    if (y + DY > canva.height - bola.radio) {
+        if (x > barra.pX && x < barra.width + barra.pX) {
+            DY = -DY;
+        } else if(a===1){
+            alert("fracasaste jajajaja");
+            document.location.reload();
+            a++;
+        }
+    }
+    if (flechaderecha && barra.pX < canva.width - barra.width) {
+        barra.pX += 3;
+    } else if (flechaizq && barra.pX > 0) {
+        barra.pX -= 3;
+    }
+    x = x + dx;
+    y = y + DY;
+}
+setInterval(dibujar, 7);
