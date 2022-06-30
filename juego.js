@@ -173,6 +173,7 @@ function dibujar() {
             alert("Fracasaste JAJAJAJAJAJAJ");
             document.location.reload();
         }
+
     }
     if (flechaderecha && barra.pX < canva.width - barra.width) {
         barra.pX += 3;
