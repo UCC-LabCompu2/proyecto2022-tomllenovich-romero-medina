@@ -12,11 +12,11 @@
 
 ### Autores: 
 
-| **Jeremías Tomllenovich  (2107117@ucc.edu.ar)** |
-|-------------------------------------------------|
-| **Rocío Vulcano          (2107174@ucc.edu.ar)** |
-| **Manuel Romero Medina  (2105277@ucc.edu.ar)**  | 
-| Ingeniería Sistema UCC                          |
+| **Jeremías Tomllenovich  (2107117@ucc.edu.ar)**           |
+|-----------------------------------------------------------|
+| **Rocío Vulcano                   (2107174@ucc.edu.ar)**  |
+| **Manuel Romero Medina             (2105277@ucc.edu.ar)** | 
+| Ingeniería Sistema UCC                                    |
 
 
 ### Tecnologías Usadas:
